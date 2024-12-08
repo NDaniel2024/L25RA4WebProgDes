@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étel Receptek</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #2ecc71;
+        }
+        .recipe {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe h2 {
+            color: #2ecc71;
+        }
+        .recipe img {
+            max-width: 50%;
+            border-radius: 5px;
+        }
+        .ingredients, .instructions {
+            margin-top: 15px;
+        }
+        .ingredients ul, .instructions ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 2px;
+            background-color: #34495e;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Étkezési Receptek</h1>
+    <p>Próbálj ki egyszerű, finom ételeket!</p>
+</header>
+
+<nav>
+    <a href="#recipe1">Húsleves</a>
+    <a href="#recipe2">Pasta Carbonara</a>
+    <a href="#recipe3">Fánk</a>
+</nav>
+
+<div class="recipe" id="recipe1">
+    <h2>Húsleves</h2>
+    <img src="husleves.png" alt="Húsleves">
+    <div class="ingredients">
+        <h3>Hozzávalók:</h3>
+        <ul>
+            <li>500 g marhahús</li>
+            <li>1 hagyma</li>
+            <li>2 sárgarépa</li>
+            <li>1 petrezselyemgyökér</li>
+            <li>Só, bors</li>
+            <li>2 liter víz</li>
+        </ul>
+    </div>
+    <div class="instructions">
+        <h3>Elkészítés:</h3>
+        <ol>
+            <li>A húst felkockázzuk és egy lábosba tesszük.</li>
+            <li>Hozzáadjuk a vízet és felforraljuk.</li>
+            <li>A forró levest lehabozzuk, majd a zöldségeket hozzáadjuk.</li>
+            <li>10 percig főzzük, majd lassú tűzön főzzük még 1 órán keresztül.</li>
+            <li>Ízesítjük sóval, borssal, és tálaljuk.</li>
+        </ol>
+    </div>
+</div>
+
+<div class="recipe" id="recipe2">
+    <h2>Pasta Carbonara</h2>
+    <img src="pasta.png" alt="Pasta Carbonara">
+    <div class="ingredients">
+        <h3>Hozzávalók:</h3>
+        <ul>
+            <li>200 g spagetti</li>
+            <li>100 g pancetta vagy szalonna</li>
+            <li>2 tojás</li>
+            <li>50 g parmezán sajt</li>
+            <li>Só, bors</li>
+            <li>Olívaolaj</li>
+        </ul>
+    </div>
+    <div class="instructions">
+        <h3>Elkészítés:</h3>
+        <ol>
+            <li>A tésztát forró, sós vízben kifőzzük.</li>
+            <li>A pancettát vagy szalonnát felkockázzuk és olívaolajon megpirítjuk.</li>
+            <li>A tojásokat felverjük, hozzáadjuk a parmezánt és sóval, borssal ízesítjük.</li>
+            <li>A kifőtt tésztát összekeverjük a pancettával, majd hozzáadjuk a tojásos keveréket.</li>
+            <li>Keverjük jól össze és azonnal tálaljuk.</li>
+        </ol>
+    </div>
+</div>
+
+<div class="recipe" id="recipe3">
+    <h2>Fánk</h2>
+    <img src="fank.png" alt="Fánk">
+    <div class="ingredients">
+        <h3>Hozzávalók:</h3>
+        <ul>
+            <li>500 g liszt</li>
+            <li>2 tojás</li>
+            <li>200 ml tej</li>
+            <li>50 g cukor</li>
+            <li>7 g élesztő</li>
+            <li>Olaj a sütéshez</li>
+            <li>Porcukor</li>
+        </ul>
+    </div>
+    <div class="instructions">
+        <h3>Elkészítés:</h3>
+        <ol>
+            <li>A tejet meglangyosítjuk, és az élesztőt felfuttatjuk benne egy teáskanál cukorral.</li>
+            <li>A lisztet a cukorral és a tojásokkal összekeverjük, majd hozzáadjuk az élesztőt és a langyos tejet.</li>
+            <li>Kelesztjük 1 órán keresztül, majd kinyújtjuk és fánkformákat szaggatunk.</li>
+            <li>Az olajat felhevítjük, és a fánkokat aranybarnára sütjük.</li>
+            <li>Porcukorral meghintve tálaljuk.</li>
+        </ol>
+    </div>
+</div>
+<br>
+<footer>
+    <p>&copy; 2024 Étkezési Receptek.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
