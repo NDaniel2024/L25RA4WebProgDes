@@ -54,14 +54,15 @@
             margin: 0;
             padding-left: 20px;
         }
-        footer {
+         footer {
             text-align: center;
-            padding: 2px;
-            background-color: #34495e;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            background-color: #333;
+            color:white;
+
+        }
+    
+        a {
+                color:black
         }
     </style>
 </head>
@@ -75,23 +76,60 @@
     <div class="content">
         <header>
             <a href="étel recept.html"><img src="etelek.png"  alt="Kezdőlap" class="centered" width="25%"></a>
-                <table width="100%">
+                <table width="100%" border="1">
                 <tr>
-                    <td> <a href="recipe1.html">Húsleves</a></td>
-                    <td> <a href="recipe2.html">Pasta Carbonara</a></td>
-                    <td> <a href="recipe3.html">Fánk</a></td>
-                    <td> <a href="urlap.html">Űrlap</a></td>
+                    <td bgcolor="#f4f4f9"> <a href="recipe1.html">Húsleves</a></td>
+                    <td bgcolor="#f4f4f9"> <a href="recipe2.html">Pasta Carbonara</a></td>
+                    <td bgcolor="#f4f4f9"> <a href="recipe3.html">Fánk</a></td>
+                    <td bgcolor="#f4f4f9"> <a href="urlap.html">Űrlap</a></td>
 
                 </tr>
             </table>
         </header>
             <br><br>
         <section>
+            <p1 style="text-align: center;">Üvözöllek a weblapomon!</p>
+               <p2>3 egyszerű receptet fogok bemutatni amelyet te is egyszerűen eltudsz készíteni otthon.</p>
+               <p3>Étel nevére rákattintva másik oldalra fog átdobni, ahol leírja az elkészítését.</p>
+                <table width="100%">
+                    <tr>
+                    <td><video src="letöltés.mp4" autoplay="off" width="25%"></video></td>
+                    </tr>
+                </table>
+                <div class="grid">
+                    <div>
+                        <button id="start/stop">Indítás/Leállítás</button>
+                    </div>
+                    <div>
+                        <button id="veryslow">Nagyon lassú</button>
+                        <button id="slow">Lassú</button>
+                        <button id="normal">Normál</button>
+                        <button id="fast">Gyors</button>
+                        <button id="veryfast">Nagyon gyors</button>
+                    </div>
+                </div>
+               </section>
 <br>
 <footer>
+    <p>
+        Forrás:
+    </p>
+    <p>
+        Képek: google, Videó: tiktok
+    </p>
     <p>&copy; 2024 Étkezési Receptek.</p>
 </footer>
+<script>
+    let btnClick = (id, onclick) => document.getElementById(id).addEventListener("click", onclick);
+    let video = document.querySelector("video");
+    btnClick("start/stop",  () => video.paused ? video.play() : video.pause());
 
+    btnClick("veryslow",  () => video.playbackRate=0.5());
+        btnClick("slow",  () => video.playbackRate=0.75());
+        btnClick("normal",  () => video.playbackRate=1());
+        btnClick("fast",  () => video.playbackRate=1.25());
+        btnClick("veryfast",  () => video.playbackRate=1.5());
+</script>
 </body>
 </html>
 
